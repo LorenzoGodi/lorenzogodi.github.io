@@ -1,7 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About [Your Name]</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="sidebar">
+    <img src="path-to-your-image.jpg" alt="Your Name" class="profile-pic">
+    <h2>Lorenzo Godi</h2>
+    <p data-lang="en">Some basic information about you.</p>
+    <p data-lang="it">Cose belle su di me</p>
+    <!-- Add any other basic info you'd like here -->
+    <a data-lang="en" href="path-to-your-file.ext" download class="download-btn">Get my CV</a>
+    <a data-lang="it" href="path-to-your-file.ext" download class="download-btn">Vedi il mio CV</a>
+</div>
+
+<div class="content">
+    <div class="lang-button">
+        <button id="englishBtn" class="active">🇬🇧 EN</button>
+        <button id="italianBtn">🇮🇹 IT</button>
+    </div>
+    <header>
+        <h1 data-lang="en">Introduction</h1>
+        <h1 data-lang="it">Introduzione</h1>
+        <p data-lang="en">Short intro about yourself</p>
+        <p data-lang="it">Robbaaaah</p>
+    </header>
+
+    <!-- Other sections (about, experience, etc.) go here -->
+    <!-- ... -->
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    color: #333;
+    background-color: #f4f4f4; /* light grey background */
+}
+
+.sidebar {
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #2c2c2c; /* dark grey sidebar */
+    color: #bdbdbd; /* lighter grey text */
+    width: 300px; 
+    padding: 20px;
+    box-shadow: 3px 0 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto 30px auto; /* centers the image horizontally and gives space below */
+    border: 3px solid #bdbdbd; /* border around the image */
+}
+
+.content {
+    flex-grow: 1; 
+    padding: 40px;
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    color: #333;
+    position: relative;
+  }
+
+
+@media (max-width: 800px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        box-shadow: none;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+}
+
+
+/* */
+
+
+.lang-button {
+  display: flex;
+  border: 1px solid #D8D8D8;
+  border-radius: 4px;
+  width: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px;
+  margin: 15px;
+}
+
+.lang-button button {
+  flex: 1;
+  font-size: 10px;
+  border: none;
+  background-color: #F4F4F4;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 8px;
+}
+
+.lang-button button.active {
+  background-color: #333;
+  color: #FFFFFF;
+}
+
+
+/* */
+
+
+.download-btn {
+    position: absolute;
+    bottom: 20px; /* Adjust this value if you have different padding at the bottom of your sidebar */
+    left: 10%; 
+    width: 80%;
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #555;  /* medium grey for the button background */
+    color: #f4f4f4;  /* light grey for the button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;  /* removes underline from anchor styled as a button */
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #777;  /* slightly lighter grey for hover effect */
+}
