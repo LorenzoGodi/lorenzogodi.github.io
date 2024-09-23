@@ -1,8 +1,8 @@
-document.getElementById('englishBtn').addEventListener('click', function() {
+document.getElementById('enBtn').addEventListener('click', function() {
     switchLanguage('en');
 });
 
-document.getElementById('italianBtn').addEventListener('click', function() {
+document.getElementById('itBtn').addEventListener('click', function() {
     switchLanguage('it');
 });
 
@@ -16,8 +16,8 @@ function switchLanguage(lang) {
         }
     });
 
-    document.getElementById('englishBtn').classList.toggle('active', lang === 'en');
-    document.getElementById('italianBtn').classList.toggle('active', lang === 'it');
+    document.getElementById('enBtn').classList.toggle('active', lang === 'en');
+    document.getElementById('itBtn').classList.toggle('active', lang === 'it');
 }
 
 // Initial setup: Display English by default

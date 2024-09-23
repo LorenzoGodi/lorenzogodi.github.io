@@ -3,38 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About [Your Name]</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="sidebar">
-    <img src="lorenzogodi.jpg" alt="Your Name" class="profile-pic">
-    <h2>Lorenzo Godi</h2>
-    <p data-lang="en">Some basic information about you.</p>
-    <p data-lang="it">Cose belle su di me</p>
-    <!-- Add any other basic info you'd like here -->
-    <a data-lang="en" href="path-to-your-file.ext" download class="download-btn">Get my CV</a>
-    <a data-lang="it" href="path-to-your-file.ext" download class="download-btn">Vedi il mio CV</a>
-</div>
-
-<div class="content">
-    <div class="lang-button">
-        <button id="englishBtn" class="active">🇬🇧 EN</button>
-        <button id="italianBtn">🇮🇹 IT</button>
-    </div>
     <header>
-        <h1 data-lang="en">Introduction</h1>
-        <h1 data-lang="it">Introduzione</h1>
-        <p data-lang="en">Short intro about yourself</p>
-        <p data-lang="it">Robbaaaah</p>
+        <div class="lang-button">
+            <button id="enBtn" class="active">EN</button>
+            <button id="itBtn">IT</button>
+        </div>
     </header>
 
-    <!-- Other sections (about, experience, etc.) go here -->
-    <!-- ... -->
+    <main>
+        <div class="column">
+            <section id="home">
+                <img src="lorenzogodi.jpeg" alt="Profile pic" class="profile-image">
+                <h2>Lorenzo Godi</h2>
 
-</div>
+                <p data-lang="en">Hi there! Looking for a boring website?</p>
+                <p data-lang="it">Ciao! Cosa ti porta qui?</p>
+            </section>
+        </div>
 
-<script src="script.js"></script>
+        <div class="column">
+            <section data-lang="en" id="about">
+                <h2>About Me</h2>
+                <p>Sooner or later I will add useful content to this page, but sadly that day is not today.</p>
+                <p>For now, just go <a class="a" href="https://www.linkedin.com/in/lorenzogodi/">here</a>.</p>
+            </section>
+            <section data-lang="it" id="about">
+                <h2>Chi sono</h2>
+                <p>Primo o poi aggiungerò qualcosa utile, ma sfortunatamente quel giorno non sarà oggi.</p>
+                <p>Per adesso, vai <a href="https://www.linkedin.com/in/lorenzogodi/">qui</a>.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p data-lang="en">(Mainly made with GPTs because I hate frontend)</p>
+        <p data-lang="it">(Fatto in buona parte con GPT perché non sopporto il frontend)</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
